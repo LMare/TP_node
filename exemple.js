@@ -5,3 +5,6 @@ res.writeHead(200, {"Content-Type": "text/plain"}); //manipulation de l’objet 
 res.end("Hello World\n"); //´ecriture du coprs de la r´eponse
 }).listen(1337, "127.0.0.1"); //lancement du serveur en pr´ecisant le port d’´ecoute
 console.log("Server running at http://127.0.0.1:1337/"); //´ecriture dnas la console JS
+
+var monmodule = require(’./monmodule.js’);
+monmodule.coucouGamin(); // affiche "coucou gamin"
